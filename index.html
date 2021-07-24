@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./base.css">
+        <title>最終課題</title>
+    </head>
+
+    <body>
+
+        <div id=top class="header" >
+            <div class="header-logo">大阪紹介</div>
+            <div class="header-intro">このページの内容</div>
+            <div class="header-list">
+                <ul>
+                    <li class="kuro">大阪の概要</li>
+                    <li class="kuro">大阪観光地</li>
+                    <li class="kuro">名物料理</li>
+                    <li class="kuro">大阪クイズ！</li>
+                    <li class="kuro">ご要望・問い合わせ</li>
+                </ul>
+                <div class="header-image">
+                    <div style="text-align: right;">
+                     <img src="img/mozuyan.jpg" alt="大阪" width="170px">
+                    </div>
+            </div>
+          
+        </div>
+
+
+        <div class="maincontent">
+            <h1 class="kuro">大阪の概要</h1>
+            <diV class="backgray">
+            <ol>
+                <li>人口：8,802755人</li>
+                <li>面積：1,899㎢</li>
+                <li>大阪府知事：吉村洋文</li>
+            </ul>
+                <img src="img/oosaka.png" alt="大阪" width="400">
+                <hr>
+                <div>
+                    <h3>②観光名所</h3>
+                        <ul><li><h4>大坂城</h4></li></ul>
+                        <p>大阪城天守閣をはじめ、西の丸庭園、梅林、大阪城ホール、弓道場などの施設がある。梅に桜、ツツジなど、折々の花を楽しむこともできる。</p>
+                        <img src="img/oosakacastle.jpg" alt="大阪城" width="400">
+                        <ul><li><h4>ユニバーサルスタジオジャパン</h4></li></ul>
+                        <P>大阪のユニバーサル・スタジオ(USJ) は、ハリウッドが初めて海外に手がけた最も刺激的で壮大な映画テーマパークである。アジアの娯楽の首都と評される大阪US」は、スリル満点のライド、活気ある路上パフォーマンス、華やかな衣装行列などで大ヒットしたハリウッド映画の世界が体験できるのが特徴だ。パーク面積39ヘクタールのUSＪは、豪華な山車を使った季節の催し物や多くの異国情緒あふれる店舗やレストランでも人々を魅了している</P>
+                        <img src="img/USJ.jpg" alt="ユニバーサルスタジオジャパン" width="400">
+                        <ul><li><h4>なんばグランド花月</h4></li></ul>
+                        <p>なんばグランド花月は、吉本興業所属のお笑い芸人によるコントや漫才、落語のほか、「吉本新喜劇」の公演が連日行われている劇場。“笑いの殿堂”として大阪の人々から長年親しまれており、「本場の笑いを間近で見たい」という多くの観光客も訪れる。</p>
+                        <img src="img/ngk.jpg" alt="なんばグランド花月" width="400">
+                </div>
+                <hr>
+                <div>
+                    <h3>③名物料理</h3>
+                        <table>
+                            <tr>
+                                <th>名物料理</th>
+                                <th>価格帯</th>
+                                <th>おすすめのお店</th>
+                            </tr>
+                            <tr>
+                                <th>たこ焼き</th>
+                                <td>500円</td>
+                                <td><a href="https://www.takoyaki.co.jp/menu/">じゃんぼ総本店</a></td>
+                            </tr>
+                            <tr>
+                                <th>お好み焼き</th>
+                                <td>800円</td>
+                                <td><a href="https://fugetsu.jp/">風月</a></td>
+                            </tr>
+                            <tr>
+                                <th>チーズケーキ</th>
+                                <td>735円</td>
+                                <td><a href="http://www.rikuro.co.jp/">りくろーおじさん</a></td>
+        
+                            </tr>
+                        </table>
+                </div>
+                <div>
+                    <h4>たこ焼き作成風景</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/JyhQyyb1k3Q" title="YouTube video player"></iframe>
+                    <h4>お好み焼き作成風景</h4>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/D14g7DW0q-g" title="YouTube video player"></iframe>
+                    <h4>チーズケーキ作成風景</h4>
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FRIKUROS1956%2Fvideos%2F2950388678553726%2F" width="414" height="476" title="YouTube video player" style="border:none;overflow:hidden"></iframe>
+                </div>
+
+                <h1 class="kuro">大阪クイズ！</h1>
+            <div>
+                
+                <h4 class="quizback">例題 現在の大阪府知事は以下の４人のうち誰？</h4>
+                <p id="ex">橋下徹・松井一郎・安倍晋三<span id="yosimurahirohumi">・吉村洋文</span></p>
+                <button class="cor" type="button" onclick="kesu()">正解人物を消す</button>
+                <h4 class="quizback">第1問 現在の大阪市長は誰？</h4>
+                <div id=pop>
+                <button type="button" onclick="alert('残念')" class="uncor">吉村洋文</button>
+                <button type="button" onclick="alert('残念')"class="cor">橋下徹</button>
+                <button type="button" onclick="alert('残念')" class="uncor">小池百合子</button>
+                <button type="button" onclick="alert('正解')"class="cor">松井一郎</button>
+                <h4 class="quizback">第２問 ？大阪府知事、大阪市長共に属する政党はどれ？</h4>
+                <button type="button" onclick="alert('残念')" class="cor">自民党</button>
+                <button type="button" onclick="alert('残念')"class="uncor">公明党</button>
+                <button type="button" onclick="alert('正解')" class="cor">大阪維新の会</button>
+                <button type="button" onclick="alert('残念')"class="uncor">共産党</button> 
+                <p id="answershow"></p>
+                <h4 class="quizback">第３問 ページトップに写る鳥の形をしたマスコットキャラクターの名前は次のうちどれ？</h4>  
+                <button type="button" onclick="alert('残念')" class="uncor">ふなっしー</button>
+                <button type="button" onclick="alert('正解')"class="cor">もずやん</button>
+                <button type="button" onclick="alert('残念')" class="uncor">とよのん</button>
+                <button type="button" onclick="alert('残念')" class="cor">すいたん</button> 
+    
+                </div>
+                
+               
+            </div>
+
+                <h1 class="ao">ご要望・問い合わせ</h1>
+                <div id=forms>
+                    <form action="mailto:e1906327@soka-u.jp" method="post" name="form1" enctype="text/plain">
+                        <div class="unline">
+                            <label>
+                                名前（ローマ字記載）：
+                                <input type="text" name="fanname" placeholder="" required>
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="radio" name="sex" value="female">
+                                女
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="male">
+                                男
+                            </label>
+                            <label>
+                                <input type="radio" name="sex" value="other">
+                                その他
+                            </label>
+                        </div>
+                        <div>
+                            <label for="request" class="unline">要望</label>
+                            <textarea name="request" id="request" rows="10" cols="30" required></textarea>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="agreement" id="agree" required>
+                            <label for="agree">中傷や侮辱を含んだ内容ではありません。サイト内で本内容をシェアされても構わない</label>
+                            </div>
+                        <div>
+                            <label for="birth">生年月日</label>
+                            <input type="date" name="birthday" id="birth">
+                        </div>
+                        <div>
+                            <label>
+                                電話番号
+                                <input type="tel" name="telphone">
+                            </label>
+                        </div>
+                        <div>
+                                <label>
+                                    添付ファイル（予想フォーメーション）
+                                    <input type="file" name="tenpu" accept="image/*">
+                                </label>
+                        </div>
+                        <div id="apart">
+                            <input type="submit" value="送信" onclick="form_action()">
+                            <input type="reset" value="取り消す">
+                            <p>※下線が惹かれている箇所は必須です※</p>
+                            <p id="flow">ご協力ありがとうございます！</p>
+                        </div>
+                </div>
+
+    </body>
+</html>
